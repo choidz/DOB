@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include_layout" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:text="과제 추가하기"
+        android:textColor="#0f0f0f"
+        android:textSize="15sp" />
+
+    <FrameLayout
+        android:id="@+id/layout_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_layout">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="14dp"
+                android:text="팀이름"
+                android:textColor="#0f0f0f"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/teamName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="팀명을 입력해주세요."
+                android:minHeight="48dp"
+                android:textColor="#111111"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="14dp"
+                android:text="과제명"
+                android:textColor="#0f0f0f"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/workName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="과제명을 입력해주세요."
+                android:minHeight="48dp"
+                android:textColor="#111111"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="14dp"
+                android:text="과제 내용"
+                android:textColor="#0f0f0f"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/workContents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="과제 내용을 입력해주세요."
+                android:minHeight="48dp"
+                android:textColor="#111111"
+                android:textSize="16sp" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="14dp"
+                android:text="방 비밀번호"
+                android:textColor="#0f0f0f"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/roomPW"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="비밀번호를 입력해주세요."
+                android:minHeight="48dp"
+                android:textColor="#111111"
+                android:textSize="16sp" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:id="@+id/btnDate"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="날짜"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/textDate"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textSize="25sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+                <Button
+                    android:id="@+id/btnTime"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="시간"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:id="@+id/textTime"
+                    android:layout_width="0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:textSize="25sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/workCreateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@+id/calendarView"
+            android:layout_gravity="bottom"
+            android:background="@color/yellow"
+            android:text="만들기"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </FrameLayout>
+</RelativeLayout>

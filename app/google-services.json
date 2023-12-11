@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "129935162405",
+    "firebase_url": "https://doourbest-fa941-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "doourbest-fa941",
+    "storage_bucket": "doourbest-fa941.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129935162405:android:a808b21d0075b031a0d3cc",
+        "android_client_info": {
+          "package_name": "com.example.doourbest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129935162405-fj4rb9tjav14r4ovloc3nsf5forr8aig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPwKW-pH4mFNIEH4pAwPK7WSprfhDE8IE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129935162405-fj4rb9tjav14r4ovloc3nsf5forr8aig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
