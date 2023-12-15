@@ -1,11 +1,8 @@
-Dd
-
-
 # DOB - Do Our Best
 
 <p align="center">
   <br>
-  <img src="./images/DOB-intro.jpg">
+  <img src="./drawable/DOB-intro.jpg">
   <br>
 </p>
 
